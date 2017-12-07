@@ -86,31 +86,31 @@
 // console.log(stringLength('I love most cookies but hate all people and most cats and murderers.'));
 
 // Write a function that accepts a number ‘n’ as a parameter. Then print the first ‘n’ Fibonacci numbers and return their sum.
-// function fibonacciSum(n, output = [0, 1], count = 2) {
-//     if (n < 1 || typeof n !== "number") {
-//         throw new Error("Invalid input: n must be a positive integer");
-//     } else if (n === 1) {
-//         var answer = {
-//             output: [0],
-//             sum : 0
-//         }
-//         return answer;
-//     } else if (n === 2) {
-//         var answer = {
-//             output: output,
-//             sum : output.reduce(function(total, num){
-//                 return total + num;
-//             })
-//         }
-//         return answer;
-//     } else {
-//         output[count] = output[count - 2] + output[count - 1];
-//         count++;
-//         return fibonacciSum(n - 1, output, count)
-//     }
-// }   
+function fibonacciSum(n, output = [0, 1], count = 2) {
+    if (n < 1 || typeof n !== "number") {
+        throw new Error("Invalid input: n must be a positive integer");
+    } else if (n === 1) {
+        var answer = {
+            output: [0],
+            sum : 0
+        }
+        return answer;
+    } else if (n === 2) {
+        var answer = {
+            output: output,
+            sum : output.reduce(function(total, num){
+                return total + num;
+            })
+        }
+        return answer;
+    } else {
+        output[count] = output[count - 2] + output[count - 1];
+        count++;
+        return fibonacciSum(n - 1, output, count)
+    }
+}   
 
-// console.log(fibonacciSum("troll birth"));
+console.log(fibonacciSum("troll birth"));
 
 
 // Write a function to solve the quadratic equation. (It should accept three numbers as parameters, and then return an array with the resulting x values.)
