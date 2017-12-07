@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: cursive;
+}
+
+#grid {
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.boxes {
+    height: 150px;
+    border: solid 8px white;
+    display: inline-block;
+}
+
+#whole {
+    background-color: #F5C6D6;
+    width: 100%;
+}
+
+#row-2-1, #row-2-2, #row-2-3, #row-2-4 {
+    background-color: #EE2E84;    
+    width: 25%;
+}
+
+#row-3-1, #row-3-2 {
+    background-color: #85CFD8;
+    width: 50%;
+}
+
+#three-fourths {
+    background-color: #8DC63F;
+    width: 75%;
+}
+
+#one-fourth {
+    background-color: #E76E34;
+    width: 25%;
+}
+

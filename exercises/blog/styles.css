@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    height: 75px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    line-height: 75px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+header {
+    position: fixed;
+    background-image: url(images/nyc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: auto;
+    width: 100vw;
+    top: 75px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 55px;
+    z-index: 0;
+    line-height: 500px;
+}
+
+.post {
+    width: 40%;
+    height: 400px;
+    background-color: white;
+    margin: 0 auto 40px auto;
+    position: relative;
+    top: 600px;
+    border-radius: 15px;
+}
+
+.post > p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img {
+    float: left;
+    margin: 20px 20px 0 20px;
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+}

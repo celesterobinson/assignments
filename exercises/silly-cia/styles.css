@@ -1,0 +1,38 @@
+h1 {   
+    color: darkgreen;
+}
+
+h1, h2 {
+    font-family: "Georgia";
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#like {
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    margin-right: 25px;
+    width: 200px;
+    height: auto;
+}
+
+body {
+    max-width: 53%;
+    margin: 0 auto;
+}
+
+

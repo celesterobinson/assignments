@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="addition" class="operations">
+        <h2>Addition</h2>
+        <input class="inputs" id="firstNumAdd" placeholder="Enter Num" type="text">
+        <input class="inputs" id="secondNumAdd" placeholder="Enter Num" type="text">
+        <button class="inputs" type="submit" onclick="add()">Sum</button>
+        <p id="additionSum"></p>
+    </div>
+    <div id="subtract" class="operations">
+        <h2>Subtraction</h2>
+        <input class="inputs" id="firstNumSub" placeholder="Enter Num" type="text">
+        <input class="inputs" id="secondNumSub" placeholder="Enter Num" type="text">
+        <button class="inputs" type="submit" onclick="sub()">Sum</button>
+        <p id="subtractionSum"></p>
+    </div>
+    <div id="multiply" class="operations">
+        <h2>Multiplication</h2>
+        <input class="inputs" id="firstNumMul" placeholder="Enter Num" type="text">
+        <input class="inputs" id="secondNumMul" placeholder="Enter Num" type="text">
+        <button class="inputs" type="submit" onclick="mul()">Product</button>
+        <p id="multiplyProduct"></p>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
