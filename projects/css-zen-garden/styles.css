@@ -4,8 +4,19 @@
 }
 
 header {
-	background: #2d6360 50% 0 url(images/huntington.jpg) no-repeat;
+	border-top: solid 12px #2d6360;
+	background-image: url(images/huntington.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
 	width: 100%;
 	height: 310px;
-	border-top: solid 12px #2d6360;
+	z-index: -1;
+}
+
+#top {
+	background-image: url(images/gridlines.png);
+	background-size: 50%;
+	position: fixed;
+	width: 100%;
+	height: 310;
 }
