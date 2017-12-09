@@ -1,22 +1,51 @@
+@font-face {
+    font-family: 'luigi';
+    src: url(fonts/SuperMario256.ttf);
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
+    font-family: 'luigi';
+    color: #eb1f22;
 }
 
 body {
     height: 100vh;
 }
 
-@font-face {
-    font-family: luigi;
-    src: url(fonts/SuperMario256.ttf);
-}
-
 .rows {
-    width: 100%;
+    text-align: center;
 }
 
-.row:first-child {
+#row-1 {
+    text-align: left;
     background-color: #ffda09;
-    height: 10%;
+}
+
+#row-2 {
+    padding: 20px;
+    background-color: #eb1f22;
+}
+
+h2 {
+    padding-bottom: 1%;
+}
+
+h3 {
+    font-family: helvetica;
+    font-weight: bold;
+}
+
+#row-4 {
+    text-align: right;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffda09;
+}
+ 
+#mushroom {
+    width: 75px;
+    height: auto;
 }
