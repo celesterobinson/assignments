@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <div id="content">
-        <h1>Travel Form</h1>
         <form action="">
-            <input type="text" placeholder="First Name" name="firstName" class="formElement"><br>
-            <input type="text" placeholder="Last Name" name="lastName" class="formElement"><br>
-            <input type="number" placeholder="Age" name="age" class="formElement"><br>
-            Female<input type="radio" name="gender">
-            Male<input type="radio" name="gender">  <br>
-            Destination <select name="destination" id="">
+            <h1>Travel Form</h1>
+            First Name: <input type="text" placeholder=" ex. Severus" name="firstName" class="formElement" required autofocus><br>
+            Last Name: <input type="text" placeholder=" ex. Snape" name="lastName" class="formElement" required><br>
+            Age: <input type="number" placeholder=" ex. 38" name="age" class="formElement" required><br>
+            Female<input type="radio" name="gender" value="Female">
+            Male<input type="radio" name="gender" value="Male">  <br>
+            Destination <select name="destination" id="destination" required>
                 <option disabled selected value>Choose a Destination</option>
                 <option value="Boston, Massachusetts">Boston, Massachusetts</option>
                 <option value="Rio de Janeiro">Rio de Janeiro</option>
