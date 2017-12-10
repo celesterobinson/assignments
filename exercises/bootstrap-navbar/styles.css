@@ -1,0 +1,17 @@
+body {
+    height: 3000px;
+    background-color: black;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #31a791;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #31a791;   
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    color: #31a791;
+    background-color: #333;
+}
