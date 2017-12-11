@@ -1,0 +1,83 @@
+body {
+    margin: 15px;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 20%);
+    grid-gap: 15px;
+    grid-template-areas: 
+        ". lp lp lp lp ."
+        ". dp1 dp2 dp3 dp4 ."
+        ". b1 b1 b2 b2 ."
+        ". g g g o .";
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 100px);
+        grid-template-areas:
+        "lp"
+        "dp1"
+        "dp2"
+        "dp3"
+        "dp4"
+        "b1"
+        "b2"
+        "g"
+        "o";
+
+    }
+}
+
+
+.light-pink {
+    grid-area: lp;
+    background-color: #F5C6D6;
+}
+
+.dark-pink-1 {
+    grid-area: dp1;
+    background-color: #EE2E84;
+}
+
+.dark-pink-2 {
+    grid-area: dp2;
+    background-color: #EE2E84;
+}
+
+.dark-pink-3 {
+    grid-area: dp3;
+    background-color: #EE2E84;
+}
+
+.dark-pink-4 {
+    grid-area: dp4;
+    background-color: #EE2E84;
+}
+
+.blue-1{
+    grid-area: b1;
+    background-color: #85CFD8;    
+}
+
+.blue-2 {
+    grid-area: b2;
+    background-color: #85CFD8;        
+}
+
+.green {
+    grid-area: g;
+    background-color: #8DC63F;
+}
+
+.orange {
+    grid-area: o;
+    background-color: #E76E34;
+    
+}
