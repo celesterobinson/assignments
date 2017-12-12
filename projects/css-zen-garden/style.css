@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: #325050;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+/* ---------------- HEADER -------------- */
+
+.header {
+    background-image: url(images/gridlines.png), url(images/contours@2x.png), url(images/noise.png), url(images/huntington.jpg);
+	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-attachment: fixed, fixed, fixed, scroll;
+    background-size: auto, 50% auto, auto, auto 200%;
+    background-color: #325050;
+    height: 310px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "t t t t t t s s s";
+}
+
+    @media (max-width: 1131px) {
+        .header {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "t t t t t t"
+                "s s s s s s";
+        }
+    }
+
+.title {
+    grid-area: t;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(http://www.csszengarden.com/214/enso.svg);
+    background-repeat: no-repeat;
+    background-size: 15%, 15%;
+    background-position: 130px 75px;
+    line-height: 65px;
+}
+
+    @media (max-width: 1131px) {
+        .title {
+            background-size: 8%, 8%;
+            padding-top: 100px;
+            background-position: 50% 10%;
+            line-height: 40px;
+            
+        }
+    }
+
+.title > h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3em;
+    position: relative;
+    left: 65px;
+    font-weight: normal;
+    color: white;
+}
+    @media (max-width: 1131px) {
+        .title > h1 {
+            left: 0px;
+        }
+    }
+
+.title > h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-weight: normal;
+    color: rgba(255,255,255,0.6);
+}
+
+
+
+.side {
+    grid-area: s;
+    background-color: rgba(50, 80, 80, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    @media (max-width: 1131px) {
+        .side {
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 70px;
+            position: fixed;
+            top: 240px;
+            width: 100%;
+        }
+    }
+
+.view {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    font-family: 'Julius Sans One', serif;
+}
+    @media (max-width: 1131px) {
+        .view {
+            background: none;
+        }
+    }
+
+.view:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------- CONTENT SECTION ~ ROW 1 -------------- */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5 1fr);
+    grid-template-areas:
+        "sum sum sum sum sum sum des des des"
+        "par par par par par par res res res"
+        "req req req req req req bl bl bl"
+        "foot foot foot foot foot foot foot foot foot"
+        "ic ic ic ic ic ic ic ic ic";
+}
+    @media (max-width: 1131px) {
+        .main {
+            grid-template-rows: repeat(8 1fr);
+            grid-template-areas:
+            "sum"
+            "par"
+            "req"
+            "foot"
+            "ic"
+            "des"
+            "res"
+        }
+    }
+
+.summary {
+    grid-area: sum;
+}
+
+.designs {
+    grid-area: des;
+    background-color: #e5ede8;
+}
+
+/* ---------------- CONTENT SECTION ~ ROW 2 -------------- */
+
+.participation {
+    grid-area: par;
+}
+
+.resources {
+    grid-area: res;
+    background-color: palegreen;
+}
+/* ---------------- CONTENT SECTION ~ ROW 3 -------------- */
+.requirements {
+    grid-area: req;
+}
+
+.blank {
+    grid-area: bl;
+    background-color: #e5ede8;
+}
+/* ---------------- CONTENT SECTION ~ ROW 4 -------------- */
+
+.author {
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	background-image: url(images/contours@2x.png), url(images/gridlines.png), url(images/noise.png), url(images/koi.jpg);
+	background-size: 50% auto, auto, auto, cover;
+	background-attachment: fixed, fixed, fixed, scroll;
+	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-position: 0 0, -5px -25px, 0 0, 0 50%;
+	height: 320px;
+	font-family: 'Libre Baskerville', sans-serif;
+	vertical-align: center;
+}
+
+.site-designer > p {
+	font-size: 24px;
+	color: rgba(255,255,255,0.6);
+	padding: 125px;
+}
+
+.site-designer > a {
+	color: rgba(255, 255, 255, 0.7)!important;
+}
+
+/* ---------------- FOOTER -------------- */
+
+.footer { 
+    grid-area: ic;
+    height: 176px;
+    background: #134347;
+    font-family: "Verde Moderna";
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.footer > a {
+    font-size: 75px;
+    line-height: 176px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---------------- FONTS -------------- */
+@font-face {
+    font-family: "Verde Moderna";
+    src: url(fonts/verdemoderna.woff);
+}
