@@ -34,6 +34,12 @@ body {
         }
     }
 
+    @media (max-width: 430px) {
+        .header {
+
+        }
+    }
+
 .title {
     grid-area: t;
     display: flex;
@@ -92,7 +98,7 @@ body {
         .side {
             background-color: rgba(255, 255, 255, 0.3);
             height: 70px;
-            position: fixed;
+            position: absolute;
             top: 240px;
             width: 100%;
         }
@@ -106,23 +112,34 @@ body {
     @media (max-width: 1131px) {
         .view {
             background: none;
+            width: 100%;
+            text-align: center;
         }
     }
 
 .view:hover {
     background-color: rgba(255, 255, 255, 0.3); 
 }
+    @media (max-width: 1131px) {
+        .view:hover {
+            background: none;
+        }
+    }
 
 a {
     text-decoration: none;
     color: white;
 }
 
+.view > a:visited {
+    text-decoration: none;
+}
+
 /* ---------------- CONTENT SECTION ~ ROW 1 -------------- */
 
 .main {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(5 1fr);
     grid-template-areas:
         "sum sum sum sum sum sum des des des"
@@ -133,6 +150,7 @@ a {
 }
     @media (max-width: 1131px) {
         .main {
+            grid-template-columns: 1fr;
             grid-template-rows: repeat(8 1fr);
             grid-template-areas:
             "sum"
@@ -147,26 +165,232 @@ a {
 
 .summary {
     grid-area: sum;
+    padding: 50px 100px 50px 141px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1em;
+	line-height: 2.2;
+	height: auto;
+	display: inline-block;
 }
 
+
+.summary > h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 27px;
+    font-style: normal;
+}
+
+
 .designs {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: center;
     grid-area: des;
     background-color: #e5ede8;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1em;
+	height: auto;
+}
+
+.designs > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    list-style: none;
+    color: #c0cac3;
+}
+@media (max-width: 1131px) {
+    .designs {
+        padding: 0;
+    }
+    .designs > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-gap: 15px;
+        grid-template-areas:
+            "one two"
+            "three four"
+            "five six"
+            "seven last";
+        padding-top: 75px;
+        margin: 0 auto;
+    }
+
+    #li-seven {
+        border: none;
+    }
+}
+
+#li-one {
+    grid-area: one;
+}
+
+#li-two {
+    grid-area: two;
+}
+
+#li-three {
+    grid-area: three;
+}
+
+#li-four {
+    grid-area: four;
+}
+
+#li-five {
+    grid-area: five;
+}
+
+#li-six {
+    grid-area: six;
+}
+
+#li-seven {
+    grid-area: seven;
+}
+
+#last-li {
+    grid-area: last;
+}
+
+.designs > ul > li {
+    border-bottom: solid 1px #d9e3dc;
+    padding: 20px;
+}
+
+#last-li {
+    border: none;
+}
+
+.design-name {
+    font-family: 'Julius Sans One', sans-serif;    
+    font-size: 1.5em;
+    font-style: normal;
+    color: #607476;
+}
+    .design-name:hover {
+        color: #0d8ba1;
+    }
+
+.designer-name {
+    color: #607476;
 }
 
 /* ---------------- CONTENT SECTION ~ ROW 2 -------------- */
 
 .participation {
     grid-area: par;
+    padding: 50px 100px 50px 141px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1em;
+	line-height: 2.2;
+	height: auto;
+    display: inline-block;
+    background-image: url(images/gridlines-opaque.png), url(images/contours-opaque.png), url(images/bamboo.png);
+	background-attachment: scroll, scroll, fixed;
+	background-repeat: repeat, repeat, no-repeat;
+	background-size: auto, auto, cover;
+	background-color: rgba(138,188,159,0.5);
+}
+
+.participation > h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 27px;
+    font-style: normal;
 }
 
 .resources {
     grid-area: res;
-    background-color: palegreen;
+    background-image: url(images/gridlines-opaque.png), url(images/contours-opaque.png), url(images/bamboo.png);
+	background-attachment: scroll, scroll, fixed;
+	background-repeat: repeat, repeat, no-repeat;
+	background-size: auto, auto, cover;
+    background-color: rgba(138,188,159,0.6);
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 0;
+    justify-content: flex-start;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1.3em;
+    padding: 100px 0 100px 10px;
+}
+
+.resources > ul {
+    list-style: none;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+@media (max-width: 1131px) {
+    .resources > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 15px;
+        grid-template-areas:
+            "fl t"
+            "th fo"
+            "fi .";
+        margin: 0 auto;
+    }
+
+    #first-li {
+        border-top: none;
+    }
+}
+
+#first-li {
+    grid-area: fl;
+    border-top: solid 1px #a0b9ad;    
+}
+
+@media (max-width: 1131px) {
+    #first-li {
+        border-top: none;
+    }
+}
+
+#two {
+    grid-area: t;
+}
+
+#three {
+    grid-area: th;
+}
+
+#four {
+    grid-area: fo;
+}
+
+#five {
+    grid-area: fi;
+    border: none;
+}
+
+.resources > ul > li {
+    border-bottom: solid 1px #a0b9ad;
+    padding: 20px;   
+}
+
+.resources > ul > li > a {
+    color: #607476;
 }
 /* ---------------- CONTENT SECTION ~ ROW 3 -------------- */
 .requirements {
     grid-area: req;
+    padding: 50px 100px 50px 141px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1em;
+	line-height: 2.2;
+	height: auto;
+    display: inline-block;
+}
+
+.requirements > h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 27px;
+    font-style: normal;
 }
 
 .blank {
@@ -188,11 +412,14 @@ a {
 	background-position: 0 0, -5px -25px, 0 0, 0 50%;
 	height: 320px;
 	font-family: 'Libre Baskerville', sans-serif;
-	vertical-align: center;
+    vertical-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 2em;
+    line-height: 50px;
+
 }
 
 .site-designer > p {
-	font-size: 24px;
 	color: rgba(255,255,255,0.6);
 	padding: 125px;
 }
@@ -211,14 +438,23 @@ a {
     padding-left: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-left: 25%;
     padding-right: 25%;
 }
 
+
 .footer > a {
     font-size: 75px;
-    line-height: 176px;
     color: rgba(255, 255, 255, 0.7);
+    /* border-radius: 50%; */
+    background-color: #134347;
+}
+
+.footer >a:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+    background: none;
+    color: #134347;  
 }
 
 /* ---------------- FONTS -------------- */
