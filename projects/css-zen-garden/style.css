@@ -63,6 +63,12 @@ body {
         }
     }
 
+    @media (max-width: 631px) {
+        .title {
+            background-size: 75px, 75px;
+        }
+    }
+
 .title > h1 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 3em;
@@ -74,6 +80,12 @@ body {
     @media (max-width: 1131px) {
         .title > h1 {
             left: 0px;
+        }
+    }
+
+    @media (max-width: 631px) {
+        .title > h1 {
+            font-size: 2em;
         }
     }
 
@@ -159,7 +171,8 @@ a {
             "foot"
             "ic"
             "des"
-            "res"
+            "res";
+            
         }
     }
 
@@ -172,6 +185,17 @@ a {
 	height: auto;
 	display: inline-block;
 }
+
+    @media (max-width: 1131px) {
+        .summary {
+            padding: 50px 50px;
+        }
+    }
+    @media (max-width: 432px) {
+        .summary {
+            max-width: 400px;
+        }
+    }
 
 
 .summary > h3 {
@@ -294,6 +318,16 @@ a {
 	background-size: auto, auto, cover;
 	background-color: rgba(138,188,159,0.5);
 }
+    @media (max-width: 1131px) {
+        .participation {
+            padding: 50px 50px;
+        }
+    }
+    @media (max-width: 432px) {
+        .participation {
+            max-width: 400px;
+        }
+    }
 
 .participation > h3 {
     font-family: 'Julius Sans One', sans-serif;
@@ -386,6 +420,16 @@ a {
 	height: auto;
     display: inline-block;
 }
+    @media (max-width: 1131px) {
+        .requirements {
+            padding: 50px 50px;
+        }
+    }
+    @media (max-width: 432px) {
+        .requirements {
+            max-width: 400px;
+        }
+    }
 
 .requirements > h3 {
     font-family: 'Julius Sans One', sans-serif;
@@ -416,8 +460,14 @@ a {
     color: rgba(255, 255, 255, 0.4);
     font-size: 2em;
     line-height: 50px;
-
 }
+
+    @media (max-width: 602px) {
+        .author {
+            font-size: 1.5em;
+            padding: 100px;
+        }
+    }
 
 .site-designer > p {
 	color: rgba(255,255,255,0.6);
@@ -441,20 +491,75 @@ a {
     align-items: center;
     padding-left: 25%;
     padding-right: 25%;
+    clear: both;
 }
 
+@media (max-width: 896px) {
+    .footer {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
 
-.footer > a {
-    font-size: 75px;
+.child {
+    width: 76px;
+    height: 76px;
+    padding: 76px 0 0 0;
+    margin: 0 .5em;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
     color: rgba(255, 255, 255, 0.7);
-    /* border-radius: 50%; */
-    background-color: #134347;
 }
 
-.footer >a:hover {
-    background-color: rgba(255, 255, 255, 0.7); 
-    background: none;
-    color: #134347;  
+.child:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+.child:visited{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.child::before{
+    font-family: "Verde Moderna";
+    font-size: 72px;
+    overflow: visible;
+    position: absolute;
+    top: 3px;
+    left:0;
+    text-indent: 0;
+    line-height: 1;
+}
+.html:hover::before, .html:focus::before{
+    content: "%";
+}
+.html::before{
+    content: "5";
+}
+.css:hover::before, .css:focus::before{
+    content: "#";
+}
+.css::before{
+    content: "3";
+}
+.a11y:hover::before, .a11y:focus::before{
+    content: "A";
+}
+.a11y::before{
+    content: "a";
+}
+.gh:hover::before, .gh:focus::before{
+    content: "G";
+}
+.gh::before{
+    content: "g";
+}
+.cc:hover::before, .cc:focus::before{
+    content: "C";
+}
+.cc::before{
+    content: "c";
 }
 
 /* ---------------- FONTS -------------- */
