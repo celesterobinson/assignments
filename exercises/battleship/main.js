@@ -5,7 +5,7 @@ let rs = require("readline-sync");
 
 let whetherShip = function() {
     let randomNum = Math.floor(Math.random() * 10);
-    return randomNum === 10;
+    return randomNum === 4;
 }
 
 let Location = function() {
@@ -17,7 +17,7 @@ let Location = function() {
 let Grid = function() {
     this.grid = [];
     this.shipsSunk = 0;
-    this.totalShips = 0;=
+    this.totalShips = 0;
 }
 
 Grid.prototype.genGrid = function() {
@@ -128,6 +128,11 @@ while(true) {
         continue;
     } 
     game.attack(x, y);
+    if(game.grid[y][x].display === "X") {
+        console.log("OMG HIT GOOD JOB")
+    } else {
+        console.log("Nope. Miss. You suck.")
+    }
     turnCounter--;
     if(game.totalShips === 0){
         break;
@@ -135,6 +140,8 @@ while(true) {
     if(turnCounter === 0){
         break;
     }
+
+
     
     game.displayGrid();
 }
