@@ -1,0 +1,43 @@
+.main {
+    font-size: 60px;
+    margin: 0;
+    transition-property: background-color;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -90px;
+    transition-property: background-color;
+}
+
+p {
+    grid-area: p;
+    text-align: center;
+}
+
+#startClock {
+    grid-area: b;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: red;
+    outline: none;
+    font-size: 50px;
+}
+
+.main.colorTransition {
+    transition: 2s ease-in;
+    background-color: red;
+}
+
+.main.colorTransition.end {
+    transition: 4s ease-in;
+    background-color: black;
+}
+
+
