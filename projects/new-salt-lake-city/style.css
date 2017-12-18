@@ -1,18 +1,60 @@
 /*-------------------- UNIVERSAL SELECTORS -------------------- */
 * {
-
+    box-sizing: border-box;
+    margin: 0;
 }
 
-* body {
-
+body {
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
-    
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*-------------------- HEADER -------------------- */
+.header {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+        "n n"
+        "s bg";
+    font-family: "Dry Brush";
+}
 
+nav {
+    grid-area: n;
+    background-color: white;
+    display: flex;
+    
+}
+
+.side {
+    grid-area: s;
+    background-color: #353230;
+}
+
+.bgimage {
+    grid-area: bg;
+    background-image: url(images/preservation-hall.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
 /*-------------------- BIOGRAPHIES -------------------- */
 
 /*-------------------- AUDIO SAMPLES -------------------- */
@@ -22,3 +64,10 @@
 /*-------------------- CONTACT -------------------- */
 
 /*-------------------- FOOTER -------------------- */
+
+/*-------------------- FONTS -------------------- */
+
+@font-face {
+    font-family: "Dry Brush";
+    src: url(fonts/DryBrush.ttf);
+}
