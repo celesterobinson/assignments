@@ -34,7 +34,7 @@ body {
     padding: 0 15%;
     font-family: 'Vollkorn', serif;
     font-size: 24px;
-    padding: 20px 0;
+    padding: 20px 10%;
 }
     @media(max-width: 858px) {
         .header {
@@ -73,7 +73,7 @@ body {
     color: black;
     padding: 0 15px;
     transition: background-color 0.5s, color 0.5s, box-shadow 1s;
-    border-radius: 15px;
+    border-radius: 5;
 }
 
 .nav > li > a:hover {

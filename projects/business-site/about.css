@@ -35,7 +35,7 @@ body {
     font-family: 'Vollkorn', serif;
     font-size: 24px;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px 0;
+    padding: 20px 10%;
 }
     @media(max-width: 858px) {
         .header {
@@ -178,4 +178,3 @@ body {
 .foot > li {
     padding: 5px;
 }
-    
