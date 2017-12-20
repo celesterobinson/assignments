@@ -12,7 +12,7 @@ body {
     width: 100%;
     height: 100vh;
     background: url(images/wooden-planks.jpg);
-    background-size: 90% 90%;
+    background-size: 100% 100%;
     background-position: top center;
     background-attachment: fixed;
     background-repeat: repeat;
@@ -133,6 +133,14 @@ body {
     max-width: 100%;
     height: auto;
     border: 5px solid white;
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s;
+}
+
+.pics:hover {
+    box-shadow: 0 8px 6px -6px black;
+    transform: scale(1.2);
+    
 }
 
 
