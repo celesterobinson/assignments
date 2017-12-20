@@ -28,7 +28,7 @@ a {
     width: 100%;
     display: grid;
     grid-template-columns: 5% 95%;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1.1fr 6fr;
     grid-template-areas:
         "n n"
         "s bg";
@@ -37,23 +37,66 @@ a {
 
 nav {
     grid-area: n;
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "d t l";
     background-color: white;
+    text-align: center;
+    box-shadow: 0 10px 6px -6px #777;
+    position: relative;
+    z-index: 1;
+}
+
+.disk {
+    grid-area: d;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+.disk > img {
+    height: 100px;
+    width: 100px;
+}
+
+.title {
+    grid-area: t;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.navs {
+    grid-area: l;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0 10%;
+    font-size: 20px;
+}
+
+.navs > li > a {
+    color: black;
 }
 
 .side {
     grid-area: s;
-    background-color: #353230;
+    background-color: white;
 }
 
 .bgimage {
     grid-area: bg;
     background-image: url(images/preservation-hall.jpg);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-
+    
 }
 /*-------------------- BIOGRAPHIES -------------------- */
 
