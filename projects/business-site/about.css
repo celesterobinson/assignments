@@ -118,6 +118,17 @@ body {
         max-height: 550px;
     }
 }
+@media(max-width: 1440px) {
+    .main {
+        max-height: 600px
+    }
+}
+@media(max-width: 1200px) {
+    .main {
+        max-height: 600px;
+    }
+}
+
 @media(max-width: 412px) {
     .main {
         max-height: 520px;
@@ -137,17 +148,20 @@ body {
     }
 }
 
-.mission {
-    grid-area: m;
+.info {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 5%;
+    border-radius: 5px;
+}
+
+.mission {
+    grid-area: m;
+    
 }
 
 
 .expectations {
     grid-area: e;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 5%;
 }
 
 @media(max-width: 1282px) {
@@ -158,8 +172,6 @@ body {
 
 .results {
     grid-area: r;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 5%;
 }
 
 #travel {
