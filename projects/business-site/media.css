@@ -34,7 +34,7 @@ body {
     padding: 0 15%;
     font-family: 'Vollkorn', serif;
     font-size: 24px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px 10%;
 }
     @media(max-width: 858px) {
@@ -72,7 +72,7 @@ body {
 
 .nav > li > a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0 15px;
     transition: background-color 0.5s, color 0.5s, box-shadow 1s;
     border-radius: 15px;
@@ -85,12 +85,158 @@ body {
     padding: 6%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: 
+    grid-column-gap: 4px;
+}
 
+.pics {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+#above {
 
 }
 
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
+
+#above {
+    
+}
 .footer {
     position: fixed;
     bottom: 0;
