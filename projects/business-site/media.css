@@ -67,6 +67,14 @@ body {
             position: fixed;
         }
     }
+    @media(max-width: 400px) {
+        .nav {
+            font-size: 14px;
+            top: 0;
+            position: fixed;
+        }
+    }
+
 
 .nav > li {
     padding: 1px;
@@ -95,6 +103,7 @@ body {
     grid-column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 4px;
+    font-family: 'Vollkorn', serif;
 }
     @media(max-width: 1135px) {
         .main {

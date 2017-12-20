@@ -41,9 +41,10 @@ body {
             padding: 0;
         }
     }
-    @media(max-width: 541px) {
+    @media(max-width: 450px) {
         .header {
-
+            font-size: 14px;
+            padding: 15%;
         }
     }
 

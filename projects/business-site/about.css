@@ -30,7 +30,7 @@ body {
 .header {
     width: 100%;
     position: fixed;
-    bottom: 90%;
+    top: 0;
     padding: 0 15%;
     font-family: 'Vollkorn', serif;
     font-size: 24px;
@@ -42,19 +42,21 @@ body {
             padding: 0;
         }
     }
-
+    
 .nav {
     list-style: none;
     display: flex;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
     padding: 0;
 }
     @media(max-width: 858px) {
         .nav {
             top: 0;
             position: fixed;
-            padding-top: 5%;
+            background-color: rgba(255, 255, 255, 0.2);
+            height: 75px;
         }
     }
     @media(max-width: 541px) {
@@ -62,7 +64,7 @@ body {
             font-size: 14px;
             top: 0;
             position: fixed;
-            padding-top: 10%;
+            padding: 10% 0;
         }
     }
 
@@ -98,7 +100,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-areas:
         "m e r";
-        max-height: 536px;
+    
     overflow: scroll;
 }
 
@@ -113,6 +115,25 @@ body {
         "e"
         "r";
         padding: 0 10%;
+        max-height: 550px;
+    }
+}
+@media(max-width: 412px) {
+    .main {
+        max-height: 520px;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 365px) {
+    .main {
+        max-height: 490px;
+    }
+}
+
+@media(max-width: 330px) {
+    .main {
+        max-height: 425px;
     }
 }
 
@@ -169,6 +190,12 @@ body {
     border-radius: 25px;
     margin-bottom: 10px;
     margin-left: 10px;
+}
+
+@media(max-width: 415px) {
+    .foot {
+        height: 70px;
+    }
 }
 
 .foot:hover {
