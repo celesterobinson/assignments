@@ -134,7 +134,7 @@ body {
     height: auto;
     border: 5px solid white;
     transition: box-shadow 1s, transform 1s;
-    transition-delay: 1s;
+    transition-delay: 2s;
 }
 
 .pics:hover {
