@@ -6,4 +6,4 @@ let startHi = function(str){
     }
 }
 
-module.exports = startHi;
+module.exportsass = startHi;

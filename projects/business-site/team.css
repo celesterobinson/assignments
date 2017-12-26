@@ -137,6 +137,26 @@ body {
     padding: 1% 10px;
     font-size: 18px;
     border-radius: 5px;
+    overflow: scroll;
+}
+
+@media(max-width: 1135px) {
+    .bios {
+        min-height: 400px;
+    }
+}
+
+@media(max-width: 900px) {
+    .bios {
+        min-height: 400px;
+    }
+}
+
+@media(max-width: 561px) {
+    .bios {
+        height: auto;
+        overflow: scroll;
+    }
 }
 
 .bios > h1 {
