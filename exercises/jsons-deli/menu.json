@@ -1,0 +1,64 @@
+{
+    "appetizers" : [
+        {
+            "name" : "Baba Ghanoush",
+            "ingredients" : ["eggplant", "lemon", "garlic", "tahini", "seasalt"],
+            "description" : "Baba ganoush is just basically eggplant blended upwith lemon juice, tahini and sea salt. Typically you have to charthe eggplant on a grill or over the flame of a gas stove. Icurrently do not have access to a gas stove, and while I have agrill I recognize some people don’t."
+        }, 
+        {
+            "name" : "Jalapeno Poppers",
+            "ingredients" : ["fresh jalapenos", "cream cheese", "bacon"],
+            "description" : "The flavor of the peppers come through, but the cheese and bacon put some of the fire out. I believe the 'tenderfoot' would even like these. I have even frozen these with good success."
+        }
+    ],
+    "coldSandwiches" : [
+        {
+            "name" : "Turkey & Avacado",
+            "ingredients" : ["provolone cheese", "turkey breast", "bacon", "avocado", "tomato", "lettuce"],
+            "description" : "A light and healthy sandwich on those days when you want something yummy, yet not really heavy. Perfect in the summertime with fresh garden-ripe tomatoes!"
+        }, 
+        {
+            "name" : "Buffalo Chicken Salad Slider",
+            "ingredients" : ["blue cheese salad dressing", "coleslaw mix", "shredded chicken breast", "cayenne pepper sauce", "slider buns"],
+            "description" : "There is so much to love about these easy chicken salad sliders. The heat you crave is perfectly balanced by the creamy coleslaw topping so you get a whole lot of flavor packed into a snack sized treat."
+        }
+    ],
+    "hotSandwiches" : [
+        {
+            "name" : "Smoked Brisket Tortas",
+            "ingredients" : ["refried beans", "iceberg slaw", "brisket"],
+            "description" : "Yum yum foody food stuff mmmmm"
+        }, 
+        {
+            "name" : "Loaded Grilled Cheese",
+            "ingredients" : ["bread", "avocado", "lime", "favorite cheese", "tomato", "onion", "spinach", "mushroom", "olive oil", "white wine", "balsalmic vinegar", "salt and pepper", "butter"],
+            "description" : "I can’t think of a word or phrase strong enough to tell you how good these sandwiches are."
+        }
+    ],
+    "desserts" : [
+        {
+            "name" : "Chocolate Chip Cookies",
+            "ingredients" : ["granulated sugar", "brown sugar", "butter", "vanilla", "egg", "flour", "baking soda", "salt", "semisweet chocolate chips"],
+            "description" : "Cookies not that great. You have been warned."
+        }, 
+        {
+            "name" : "Layered Peppermint Bark",
+            "ingredients" : ["white chocolate", "peppermint candies", "dark chocolate", "heavy cream", "peppermint extract"],
+            "description" : "I never liked peppermint bark until I tried this recipe. The soft ganache center contrasts perfectly with the crunchy peppermints."
+        }
+    ],
+    "drinks" : [
+        {
+            "name" : "Mint Julep",
+            "ingredients" : ["mint leaves", "gigner ale", "fresh lemon juice", "sugar", "water", "crushed ice"],
+            "description" : "Does not contain alcohol. Is delicious."
+        }, 
+        {
+            "name" : "Chocolate Milk",
+            "ingredients" : ["milk", "honey", "cocoa powder"],
+            "description" : "For the kid in you. Or your kids. Or both."
+        }
+    ]
+}
+
+"drinks"[0]."name"
