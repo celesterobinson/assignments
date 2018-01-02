@@ -7,9 +7,9 @@ let shiftedInput = input => {
     let charcode = 0;
     
     for(let i = 0; i < input.length; i++) {
-        let letters = /([A-Z,a-z])/g.test(input[i]);
+        let letters = /([A-Za-z])/g.test(input[i]);
         if(letters) {
-            charcode = (input[i].charCodeAt()) + shift;
+            charcode = 97 + (input[i].charCodeAt() + shift - 97) % 26;
         } else {
             charcode = input[i].charCodeAt();
         }
