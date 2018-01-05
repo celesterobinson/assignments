@@ -6,7 +6,7 @@ import "./index.css";
 function App(props) {
 
     return (
-        <div>
+        <div className="app-wrapper">
             <Header></Header>
             <Content></Content>
         </div>

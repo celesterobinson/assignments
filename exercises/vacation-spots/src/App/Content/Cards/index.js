@@ -20,10 +20,10 @@ function Cards(props) {
     }
     let style = {backgroundColor: color}
     return (
-        <div style = {style}>
+        <div className="cards" style = {style}>
             <h2>{place}</h2>
+            <h3>Best time to go: {timeToGo}</h3>
             <h4>{price}</h4>
-            <h3>{timeToGo}</h3>
         </div>
     )
 }
