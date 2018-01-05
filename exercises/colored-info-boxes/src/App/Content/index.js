@@ -26,20 +26,21 @@ function Content(props) {
             name: "Albus Dumbledore",
             status: "Deceased",
             bio: "Kept everything a secret without a good reason.",
-            backgroundColor: "yellow" 
+            backgroundColor: "yellow",
+            color: "black"
         },
         {
             name: "Severus Snape",
             status: "Deceased",
             bio: "Typical misunderstood goth who died for everyone but nobody knew because of Dumbledore's secrets.",
-            backgroundColor: "black",
-            color: "white"
+            backgroundColor: "black"
         },
         {
             name: "Luna Lovegood",
             status: "Alive",
             bio: "Super quirky, like over the top quirky. Extremely loyal though.",
-            backgroundColor: "pink" 
+            backgroundColor: "pink",
+            color: "black" 
         },
         {
             name: "Neville Longbottom",
@@ -57,18 +58,19 @@ function Content(props) {
             name: "Hedwig",
             status: "Deceased :(",
             bio: "A super nice owl that died for Harry. For sure wasn't worth it.",
-            backgroundColor: "lightgrey" 
+            backgroundColor: "lightgrey",
+            color: "black"
         },
         {
             name: "Voldemort",
             status: "Deceased...or is he?",
             bio: "The Dark Lord. The most magnificent wizard who ever lived. Harry killed him. LONG LIVE LORD VOLDEMORT.",
-            backgroundColor: "#222",
-            color: "white"
+            backgroundColor: "white",
+            color: "black"
         }
     ]
     return (
-        <div>
+        <div className="card-wrapper">
             {info.map((character) => {
                 return <Boxes {...character}></Boxes>
             })}
