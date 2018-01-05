@@ -4,21 +4,24 @@ import "./index.css";
 function Cards(props) {
     let { place, price, timeToGo } = props;
     let color;
+    let backgroundColor;
     switch (timeToGo) {
         case "Summer":
-            color = "orange";
+            backgroundColor = "#ee5a29";
             break;
         case "Fall":
-            color = "brown";
+            backgroundColor = "#a77129";
             break;
         case "Winter":
-            color = "lightblue";
+            backgroundColor = "lightblue";
+            color = "black";
             break;
         case "Spring":
-            color = "green";
+            backgroundColor = "#82cf61";
+            color = "#222";
             break;
     }
-    let style = {backgroundColor: color}
+    let style = {backgroundColor: backgroundColor, color: color}
     return (
         <div className="cards" style = {style}>
             <h2>{place}</h2>
