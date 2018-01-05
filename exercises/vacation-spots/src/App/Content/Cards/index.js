@@ -5,6 +5,7 @@ function Cards(props) {
     let { place, price, timeToGo } = props;
     let color;
     let backgroundColor;
+    let dollarSigns;
     switch (timeToGo) {
         case "Summer":
             backgroundColor = "#ee5a29";
@@ -21,10 +22,18 @@ function Cards(props) {
             color = "#222";
             break;
     }
+    if(price < 500) {
+        dollarSigns = '$';
+    } else if (price < 1000) {
+        dollarSigns = '$$';
+    } else if (price > 1000) {
+        dollarSigns = '$$$';
+    }
+
     let style = {backgroundColor: backgroundColor, color: color}
     return (
         <div className="cards" style = {style}>
-            <h2>{place}</h2>
+            <h2>{place} | {dollarSigns}</h2>
             <h3>Best time to go: {timeToGo}</h3>
             <h4>{price}</h4>
         </div>
