@@ -5,9 +5,10 @@ function BlogPost(props) {
     let {title, subtitle, author, date} = props;
     return (
         <div className="blog-post">
-            <h1>{title}</h1>
-            <h4>{subtitle}</h4>
-            <h6>Posted by {author} on {date}</h6>
+            <div className="blog-content">
+                <h1>{title}<br/><span className="subtitle">{subtitle}</span></h1>
+                <h6>Posted by <a href="#">{author}</a> on {date}</h6>
+            </div>
         </div>
     )
 }

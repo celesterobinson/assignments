@@ -29,11 +29,14 @@ function BlogList(props) {
     ]
 
     return (
-        <div className="blogs">
-            {posts.map((post) => {
-                return <BlogPost {...post}></BlogPost>
-            })}
-        </div>
+            <div className="blogs">
+                {posts.map((post) => {
+                    return <BlogPost {...post}></BlogPost>
+                })}
+                <div className="button-div">
+                    <button className="older-posts">OLDER POSTS &rarr;</button>
+                </div>
+            </div>
     )
 }
 

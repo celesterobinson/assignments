@@ -1,3 +1,40 @@
 .blog-post {
-    border-bottom: solid .5px light-gray;
+    padding: 50px 0;
+    border-bottom: solid 1px lightgray;
+}
+
+.blog-content {
+    padding: 0;
+    width: 90%;
+}
+
+.blog-content > h1 {
+    font-size: 36;
+}
+
+.subtitle {
+    font-size: 1.75rem;
+    font-family: 'Open Sans Skinny';
+    font-weight: 300;
+}
+
+.blog-content > h1:hover {
+    color: #0085a1;
+    cursor: pointer;
+}
+
+.blog-content > h6 {
+    font-family: 'Lora';
+    color: gray;
+    font-size: 18px;
+}
+
+.blog-content > h6 > a {
+    color: black;
+    text-decoration: none;
+}
+
+.blog-content > h6 > a:hover {
+    color: #0085a1;
+    text-decoration: underline;
 }

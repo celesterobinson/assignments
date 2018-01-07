@@ -17,6 +17,10 @@
     justify-content: space-around;
 }
 
+.social-icons > li > a > img:hover {
+    filter: invert(25%);
+}
+
 .footer > h4 {
     font-family: 'Lora';
     color: lightgray;
