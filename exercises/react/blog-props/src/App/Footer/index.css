@@ -1,0 +1,24 @@
+.footer {
+    grid-area: foot;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid .2px lightgray;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.footer > h4 {
+    font-family: 'Lora';
+    color: lightgray;
+    font-size: 15px;
+}

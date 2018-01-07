@@ -1,0 +1,42 @@
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    padding: 20px 15%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%; 
+    right: 0;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    right: -35px;
+}
+
+.nav-links > li {
+    margin-right: 40px;
+    position: relative;
+    top: 10px;
+    right: -10px;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links > li > a:hover, .navbar > h2 > a:hover {
+    color: lightgray;
+}
+
+.navbar > h2 > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+

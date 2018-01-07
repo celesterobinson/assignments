@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Bold';
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-areas: 
+        "head"
+        "blog"
+        "foot";
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url(https://fonts.gstatic.com/s/opensans/v15/EInbV5DfGHOiMmvb1Xr-hhampu5_7CjHW5spxoeN3Vs.woff2);
+}
+
+@font-face {
+    font-family: 'Open Sans Skinny';
+    src: url(https://fonts.gstatic.com/s/opensans/v15/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2);
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url(https://fonts.gstatic.com/s/lora/v12/rAXKWvABQNHjPUk26ixVvvesZW2xOQ-xsNqO47m55DA.woff2);
+}
