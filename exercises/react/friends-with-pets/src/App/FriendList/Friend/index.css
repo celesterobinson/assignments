@@ -16,6 +16,10 @@ h2 {
     color: white;
 }
 
+h3 {
+    color: #ee5a29;
+}
+
     @media(max-width: 819px) {
         .friend-info {
             flex-direction: column;
