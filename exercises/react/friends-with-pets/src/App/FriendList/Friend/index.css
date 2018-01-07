@@ -1,0 +1,24 @@
+.friend-info {
+    display: flex;
+    margin: 35px 20px;
+    padding: 20px;
+    min-height: 200px;
+    width: 40%;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: helvetica;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: #333;
+}
+
+h2 {
+    color: white;
+}
+
+    @media(max-width: 819px) {
+        .friend-info {
+            flex-direction: column;
+            width: 80%;
+        }
+    }
