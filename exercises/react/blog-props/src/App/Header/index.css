@@ -12,7 +12,7 @@
 }
     @media(max-width: 740px) {
         .header {
-            background-size: auto
+            background-size: 150% 150%;;
         }
     }
 
