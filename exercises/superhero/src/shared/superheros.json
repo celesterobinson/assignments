@@ -1,0 +1,15 @@
+[{
+        "name": "Star-Lord",
+        "image": "./images/starlord.jpeg",
+        "caption": "I'm super hot"
+    }, {
+        "name": "Dr. Strange",
+        "image": "./images/strange.jpg",
+        "caption": "I used to be a dick. Now I'm not"
+    },{
+        "name": "Wonder Woman",
+        "image": "./images/wonder.jpeg",
+        "caption": "I'm a woman"
+    }
+
+]
