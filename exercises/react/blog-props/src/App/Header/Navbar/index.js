@@ -12,6 +12,12 @@ function Navbar(props) {
                 <li><a href="">SAMPLE POST</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
+            <select className="dropdown" name="" id="">
+                <option value="">HOME</option>
+                <option value="">ABOUT</option>
+                <option value="">SAMPLE POST</option>
+                <option value="">CONTACT</option>
+            </select>
         </div>
     )
 }

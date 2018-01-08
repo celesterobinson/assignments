@@ -25,6 +25,11 @@ function BlogList(props) {
             subtitle: "Many say exploration is part of our destiny, but it’s actually our duty to future generations",
             author: "Start Bootstrap",
             date: "July 8, 2017"
+        },{
+            title: "Star Wars",
+            subtitle: "Austie's debut as young luke skywalker",
+            author: "Austie Robinson",
+            date: "January 7, 2018"
         }
     ]
 

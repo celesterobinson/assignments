@@ -4,7 +4,20 @@
     justify-content: space-between;
     height: 67px;
     padding: 20px 15%;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: top 0.2 ease-in-out;
 }
+    @media(max-width: 1252px) {
+        .navbar {
+            padding: 20px 10%;
+        }
+    }
+
+    .nav-up {
+        top: -67px;
+    }
 
 .nav-links {
     list-style: none;
@@ -17,6 +30,7 @@
     position: relative;
     right: -35px;
 }
+    
 
 .nav-links > li {
     margin-right: 40px;
@@ -35,8 +49,35 @@
 }
 
 .navbar > h2 > a {
+    display: flex;
     text-decoration: none;
     color: white;
     font-size: 20px;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media(max-width: 1096px) {
+    .navbar {
+        background-color: white;
+    }
+    .navbar > h2 > a {
+        color: black;
+        padding: 0;
+        align-items: center;
+    }
+    .dropdown {
+        display: inline-block;
+        position: relative;
+        outline: none;
+    }
+    .nav-links {
+        display: none;
+    }
+    .blogs {
+        z-index: 0;
+    }
 }
 
