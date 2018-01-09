@@ -1,0 +1,22 @@
+.superhero {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    margin: 50px;
+    padding: 20px;
+    width: 80%;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+}
+.image {
+    position: relative;
+    left: 0;
+}
+.image > img {
+    width: 60%;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 25px;
+}

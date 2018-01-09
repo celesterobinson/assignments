@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./index.css";
 import SuperHero from "./SuperHero";
 import heros from "../shared/superheros.json";
 import starlord from "../images/starlord.jpeg"
@@ -23,6 +24,7 @@ class App extends Component {
         let { heros, images } = this.state;
         return (
             <div className="app-wrapper">
+                <h1>Superhero Stuff</h1>
                 {heros.map((hero, index) => {
                     return <SuperHero displayCatchphrase={this.displayCatchphrase} imageUrl={images[index]} {...hero}></SuperHero>
                 })}
