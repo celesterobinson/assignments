@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 67px;
+    line-height: 67px;
+    background-color: #222;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    position: fixed;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 20px;
+}
+
+.links > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    transition: text-shadow 0.4s;
+}
+
+.links > a:hover {
+    text-shadow: 0 0px 38px white, 0 0px 12px white;
+}

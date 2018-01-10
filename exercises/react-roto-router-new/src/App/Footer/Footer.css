@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #222;
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.social > li {
+    margin: 0 10px;
+    transition: filter 1s;
+}
+
+.social > li:hover {
+    filter: invert(50%);
+}
