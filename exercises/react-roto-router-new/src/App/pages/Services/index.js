@@ -1,15 +1,16 @@
 import React from "react";
 import {Link, Route, Switch} from "react-router-dom"
+
+import Header from "../../Header";
 import Service from "../Service";
 import services from "../../../shared/services.json"
 
 
 function Services(props){
-
-    
     return(
+        
         <div className="services">
-            <h1>Services</h1>
+        <Header brand="Fudge Free Plumbing" slogan="Let's get cleaning!"/>
             <div className="services">
                {services.map((service, i)=>{
                    return <Link key = {i} to={`/services/${i}`}>{service.name}</Link>
