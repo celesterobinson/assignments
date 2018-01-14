@@ -75,9 +75,9 @@ function editContact(id, updatedContact) {
 store.dispatch(addContact(celeste));
 store.dispatch(addContact(austie));
 store.dispatch(addContact(julie));
-store.dispatch(editContact(3, {
-    id: 3,
-    name: "Julie",
-    phone: "478-299-2001",
-    email: "julie@gmail.com"
+store.dispatch(editContact(2, {
+    id: 2,
+    name: "Austin",
+    phone: "435-327-2363",
+    email: "austie@gmail.com"
 }));
