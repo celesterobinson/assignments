@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas: 
+        "head"
+        "list";
+}
+

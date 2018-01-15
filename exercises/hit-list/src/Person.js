@@ -5,8 +5,10 @@ function Person(props) {
     let {name, image} = props;
     let style = {backgroundImage: `url(${image})`};
     return (
-        <div className="person"style={style}>
-            <h1>{name}</h1>
+        <div className="person" style={style}>
+            <div className="text-wrapper">
+                <h1>{name}</h1>
+            </div>
         </div>
     )
 }

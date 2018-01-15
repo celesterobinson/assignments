@@ -1,0 +1,9 @@
+.people-list {
+    background-color: gray;
+    grid-area: list;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 50px;
+}

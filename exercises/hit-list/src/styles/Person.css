@@ -1,0 +1,16 @@
+.person {
+    grid-area: person;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.text-wrapper {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(46, 138, 198, 0.7); 
+}
