@@ -16,6 +16,7 @@ componentDidMount() {
             this.setState({
                 person: response.data
             })
+            console.log(response.data);
         })
 }
 
@@ -33,8 +34,14 @@ componentDidMount() {
     render() {
         return (
             <div>
-                <h1>{this.state.person.name}</h1>
-                <h1>{this.state.person.eye_color}</h1>
+                <h1 style={{color: "green"}}>{this.state.person.name}</h1>
+                <h3>Eye Color: {this.state.person.eye_color}</h3>
+                <h3>Mass: {this.state.person.mass}</h3>
+                <h3>Height: {this.state.person.height}</h3>
+                <h3>Hair Color: {this.state.person.hair_color}</h3>
+                <h3>Skin Color: {this.state.person.skin_color}</h3>
+                <h3>Birth Year: {this.state.person.birth_year}</h3>
+                <h3>Gender: {this.state.person.gender}</h3>
             </div>
         )
     }
