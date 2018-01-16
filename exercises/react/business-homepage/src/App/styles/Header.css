@@ -1,0 +1,7 @@
+.header {
+    grid-area: h;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
