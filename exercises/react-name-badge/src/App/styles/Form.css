@@ -1,0 +1,46 @@
+.form {
+    border: solid 3px black;
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    height: 80%;
+    width: 90%;
+}
+.form-wrapper > input {
+    width: 45%;
+    margin: 20px;
+    margin-top: 0;
+    border: solid 2px black;
+    height: 30px;
+}
+    @media (max-width: 1375px) {
+        .form-wrapper > input {
+            width: 40%;
+        }
+    }
+    @media(max-width: 692px) {
+        .form-wrapper > input {
+            width: 95%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+.form-wrapper > textarea {
+    width: 95%;
+    border: solid 2px black;
+}
+
+.form-wrapper > button {
+    margin-top: 20px;
+    border: solid 1px black;
+    width: 100px;
+}

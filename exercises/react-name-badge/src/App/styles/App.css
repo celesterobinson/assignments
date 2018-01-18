@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.app-wrapper {
+    text-align: center;
+}
+
+h1 {
+    height: 67px;
+    line-height: 67px;
+}
