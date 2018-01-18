@@ -104,7 +104,7 @@ class Form extends Component {
                         <input minlength="3" onChange={this.handleChange} required type="text" placeholder="Last Name" name="lastName" value={lastName} /><br />
                         <input minlength="3" onChange={this.handleChange} required type="text" placeholder="Email" name="email" value={email} />
                         <input minlength="3" onChange={this.handleChange} required type="text" placeholder="Place of Birth" name="birthPlace" value={birthPlace} /><br />
-                        <input minlength="3" onChange={this.handleChange} required type="number" placeholder="Phone" name="phone" value={phone} />
+                        <input onChange={this.handleChange} required type="number" placeholder="Phone" name="phone" value={phone} />
                         <input minlength="3" onChange={this.handleChange} required type="text" placeholder="Favorite Food" name="favoriteFood" value={favoriteFood} /><br />
                         <textarea pattern=".{3,}" onChange={this.handleChange} name="about" value={about} id="" cols="30" rows="10" placeholder="Tell us about yourself"></textarea><br />
                         <button type="submit">Submit</button>
