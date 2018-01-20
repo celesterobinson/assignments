@@ -84,7 +84,6 @@ class Form extends Component {
         return true;
     }
     backgroundColor(i) {
-        let badges = this.state.badges;
         let style = { backgroundColor: "white" };
         if (i % 2 === 0) {
             style = { backgroundColor: "blue" };
