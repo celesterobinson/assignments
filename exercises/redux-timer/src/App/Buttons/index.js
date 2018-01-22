@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addSecond, reset } from "../../redux"
+import { addSecond, reset, addLap } from "../../redux"
 
 class Buttons extends Component {
     constructor() {
@@ -10,36 +10,85 @@ class Buttons extends Component {
         }
         this.startTimer = this.startTimer.bind(this);
         this.stopTimer = this.stopTimer.bind(this);
+        this.resetTimer = this.resetTimer.bind(this);
+        this.lap = this.lap.bind(this);
     }
 
     startTimer() {
         const id = setInterval(this.props.addSecond, 1000);
         this.setState({
             intervalId: id
-        })
+        });
     }
 
     stopTimer() {
-        clearInterval(this.startTimer.intervalId);
+        clearInterval(this.state.intervalId);
+        this.setState({
+            intervalId: null
+        });
     }
 
-    reset() {
+    resetTimer() {
         this.stopTimer();
-        this.props.reset;
+        this.props.reset();
+    }
+
+    lap() {
+        this.props.addLap();
     }
 
     render() {
-        const styles = {
+        const divStyles = {
             textAlign: "center"
         }
+        const buttonStyles = {
+            width: "20%",
+            height: "100px",
+            fontSize: "2em",
+            color: "whitesmoke",
+            backgroundColor: "#4AC26A",
+            border: "none",
+            cursor: "pointer",
+            marginTop: "10px"
+        }
+
+        const startOrStopButton = this.state.intervalId ?
+            <div>
+                <button
+                    onClick={this.stopTimer}
+                    style={{ ...buttonStyles, backgroundColor: "#C2421A" }}>Stop
+                </button>
+                <br />
+                <button
+                    onClick={this.lap}
+                    style={{ ...buttonStyles, backgroundColor: "black", color: "white" }}>Lap
+                </button>
+                <br />
+                <button
+                    onClick={this.resetTimer}
+                    style={{ ...buttonStyles, backgroundColor: "#737070" }}>Reset
+                </button>
+            </div>
+            :
+            <div>
+                <button
+                    onClick={this.startTimer}
+                    style={buttonStyles}>Start
+            </button>
+                <br />
+                <button
+                    onClick={this.resetTimer}
+                    style={{ ...buttonStyles, backgroundColor: "#737070" }}>Reset
+            </button>
+            </div>
+
         return (
-            <div className="buttons">
-                <button style={styles} name="start" onClick={this.startTimer}>Start</button>
-                <button name="stop" onClick={this.stopTimer}>Stop</button>
-                <button name="reset" onClick={this.reset}>Reset</button>
+            <div style={divStyles}>
+                {startOrStopButton}
+                <br />
             </div>
         )
     }
 }
 
-export default connect(null, { addSecond, reset })(Buttons);
+export default connect(state => state, { addSecond, reset, addLap })(Buttons);
