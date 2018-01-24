@@ -3,7 +3,7 @@ import Form from "../shared/Form";
 
 function Aside(props) {
     return (
-        <div>
+        <div className="aside">
             <Form />
         </div>
     )

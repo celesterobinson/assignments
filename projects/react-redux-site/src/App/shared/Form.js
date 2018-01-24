@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import axios from "axios";
-const lyricUrl = "https://api.musixmatch.com/ws/1.1/track.search&apikey=e14650003ae32bc2229f9573c5408897";
+const lyricUrl = "https://api.musixmatch.com/ws/1.1/track.search?apikey=e14650003ae32bc2229f9573c5408897";
 
 class Form extends Component {
     constructor(props) {
+        let {title, artist, genre} = props;
         super(props);
         this.state = {
             inputs: {
@@ -19,7 +20,7 @@ class Form extends Component {
         let {name, value } = e.target;
         this.setState((prevState)=>{
             return {
-                inputs {
+                inputs: {
                     ...prevState.inputs,
                     [name]: value
                 }
