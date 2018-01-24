@@ -4,6 +4,12 @@
     border-radius: 10px;
 }
 
+@media(max-width: 800px) {
+    .post {
+        width: 40%;
+    }
+}
+
 
 .post > img {
     height: 200px;

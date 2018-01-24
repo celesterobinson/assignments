@@ -26,7 +26,6 @@ export const addLap = () => {
 
 const reducer = (state = initialState, action) => {
     const stateCopy = { ...state };
-    const lapsCopy = { ...state.laps }
     switch (action.type) {
         case "ADD_SECOND":
             if (state.seconds === 59) {
@@ -39,9 +38,10 @@ const reducer = (state = initialState, action) => {
         case "RESET":
             return initialState;
         case "ADD_LAP":
-            let lapTime = [`${state.minutes}:${state.seconds}`, ...lapsCopy];
-            console.log(lapTime);
-            break;
+            const minutes = state.minutes < 10 ? `0${state.minutes}` : state.minutes;
+            const seconds = state.seconds < 10 ? `0${state.seconds}` : state.seconds;
+            let lapTime = [...state.laps, `${minutes}:${seconds}`];
+            return { ...state, laps: lapTime };
         default:
             return state;
     }

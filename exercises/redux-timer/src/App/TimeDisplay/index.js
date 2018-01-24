@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import LapDisplay from "./LapDisplay";
 
 function TimeDisplay(props) {
     const styles = {
@@ -11,13 +10,14 @@ function TimeDisplay(props) {
     const minutes = props.minutes < 10 ? `0${props.minutes}` : props.minutes;
     const seconds = props.seconds < 10 ? `0${props.seconds}` : props.seconds;
     const currTime = `${minutes}:${seconds}`;
-    const lapTime = props.laps.map((lapDisplay, i) => {
-        return <LapDisplay key={i} {...lapDisplay} minutes={minutes} seconds={seconds}></LapDisplay>
+    const lapTime = props.laps.map((lap, i) => {
+        return <h6 key={i} >{lap}</h6>
     })
+    console.log(props.laps);
     return (
         <div>
             <h1 style={styles}>{currTime}</h1>
-            <h2>{lapTime}</h2>
+            <div>{lapTime}</div>
         </div>
     )
 }
