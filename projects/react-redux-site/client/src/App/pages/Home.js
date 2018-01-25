@@ -1,9 +1,17 @@
 import React from "react";
+import "../styles/Home.css";
+import {Link} from "react-router-dom";
 
 function Home(props) {
     return (
-        <div className="main">
-                <p>This is my homepage. I hate it.</p>
+        <div className="home">
+            <h1>Lyricle</h1>
+            <h3>Find the lyrics to songs you love.</h3>
+            <Link to="/lyrics">
+                <div className="search">
+                    Get Started &rarr;
+                </div>
+            </Link>
         </div>
     )
 }

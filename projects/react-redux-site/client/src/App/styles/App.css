@@ -5,53 +5,30 @@
 
 .app-wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 85% 5%;
     grid-template-areas:
-        "h h"
-        "a m"
-        "a f";
+        "h"
+        "m"
+        "f";
     height: 100vh;
+    background-image: url(../images/singer.jpg);
+    font-family: 'Indie Flower', cursive;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
-    @media(max-width: 600px) {
-        .app-wrapper {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 5fr 1fr;
-            grid-template-areas:
-                "h"
-                "a"
-                "m"
-                "f";
-            height: auto;
-        }
-    }
 
-.header {
-    grid-area: h;
+.app-wrapper > Switch > Route {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 45px;
-    background-color: antiquewhite;
-}
-    .header > a {
-        text-decoration: none;
-    }
 
+}
 .aside {
     grid-area: a;
-    background-color: teal;
 }
 
 .main {
     grid-area: m;
     height: 100%;
     width: 100%;
-    background-color: rgb(132, 115, 159);
-}
-
-.footer {
-    grid-area: f;
-    background-color: #222;
-    color: white;
 }

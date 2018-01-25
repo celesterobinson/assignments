@@ -1,0 +1,32 @@
+.lyrics {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.lyrics-display {
+    align-self: flex-start;
+    padding: 10px 30%;
+    font-size: 40px;
+    overflow: scroll;
+}
+
+.lyrics-display > h2 {
+    text-align: center;
+}
+
+.lyrics-display > h4 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+.lyrics-display > h5 {
+    text-align: center;
+    font-style: italic
+}

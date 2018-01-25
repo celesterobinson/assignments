@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Header from "./Components/Header";
-import Aside from "./Components/Aside";
 import Footer from "./Components/Footer";
 // import Main from "./Components/Main";
 import Favorites from "./pages/Favorites.js";
@@ -15,11 +14,10 @@ function App(props) {
         <div className="app-wrapper">
             <Header />
             <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/lyrics" component={Lyrics}/>
-                <Route path="/favorites" component={Favorites}/>
+                <Route exact path="/" component={Home} />
+                <Route path="/lyrics" component={Lyrics} />
+                <Route path="/favorites" component={Favorites} />
             </Switch>
-            <Aside />
             <Footer />
         </div>
     )

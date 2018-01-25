@@ -26,8 +26,10 @@ export const getLyrics = (inputs) => {
                 const lyricUrl = `https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${trackId}&apikey=e14650003ae32bc2229f9573c5408897`;
                 axios.post("http://localhost:8080", { url: lyricUrl })
                     .then((response) => {
+                        console.log(response.data.message.body);
                         let { lyrics_body } = response.data.message.body.lyrics;
                         trackInfo.lyrics = lyrics_body;
+                        console.log(lyrics_body);
                         dispatch({
                             type: "GET_TRACK",
                             track: trackInfo
