@@ -2,7 +2,7 @@ import React from "react";
 
 function Favorites(props) {
     return (
-        <div>
+        <div className="main">
                 <p>This is my Favorites page. I hate it.</p>
         </div>
     )

@@ -5,12 +5,12 @@
 
 .app-wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr 0.5fr;
     grid-template-areas:
-        "h h h"
-        "a m m"
-        "a f f";
+        "h h"
+        "a m"
+        "a f";
     height: 100vh;
 }
     @media(max-width: 600px) {
@@ -28,20 +28,30 @@
 
 .header {
     grid-area: h;
-    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    background-color: antiquewhite;
 }
+    .header > a {
+        text-decoration: none;
+    }
 
 .aside {
     grid-area: a;
-    background-color: paleturquoise;
+    background-color: teal;
 }
 
 .main {
     grid-area: m;
-    background-color: orangered;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(132, 115, 159);
 }
 
 .footer {
     grid-area: f;
-    background-color: forestgreen;
+    background-color: #222;
+    color: white;
 }

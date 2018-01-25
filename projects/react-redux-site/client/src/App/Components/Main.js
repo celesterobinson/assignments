@@ -4,7 +4,7 @@ function Main(props) {
     
     return(
         <div className="main">
-            <p>main</p>
+            
         </div>
     )
 }
