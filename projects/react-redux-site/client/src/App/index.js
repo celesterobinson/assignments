@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-// import Main from "./Components/Main";
 import Favorites from "./pages/Favorites.js";
 import Home from "./pages/Home.js";
 import Lyrics from "./pages/Lyrics.js";

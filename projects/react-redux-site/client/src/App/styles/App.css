@@ -7,22 +7,27 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 85% 5%;
-    grid-template-areas:
-        "h"
-        "m"
-        "f";
+    grid-template-areas: "h" "m" "f";
     height: 100vh;
     background-image: url(../images/singer.jpg);
     font-family: 'Indie Flower', cursive;
     background-size: 100% 100%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.app-wrapper > Switch > Route {
+@media(max-width: 1000px) {
+    .app-wrapper {
+        background-size: auto 100%;
+    }
+}
+
+.app-wrapper>Switch>Route {
     display: flex;
     justify-content: center;
-
 }
+
 .aside {
     grid-area: a;
 }

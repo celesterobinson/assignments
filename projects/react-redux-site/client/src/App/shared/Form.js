@@ -37,10 +37,10 @@ class Form extends Component {
         let { track, artist } = this.state.inputs;
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <input onChange={this.handleChange} name="track" value={track} placeholder="Track Title" type="text" /><br />
+                <form>
+                    <input onChange={this.handleChange} name="track" value={track} placeholder="Track Title" type="text" />
                     <input onChange={this.handleChange} name="artist" value={artist} placeholder="Artist" type="text" /><br />
-                    <button type="submit">Search</button>
+                    <div className="search lyric-search" onClick={this.handleSubmit}>Search</div>
                 </form>
             </div>
         )
