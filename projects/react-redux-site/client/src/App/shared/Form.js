@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {connect} from "react-redux";
-import {getLyrics} from "../redux/track";
+import { connect } from "react-redux";
+import { getLyrics } from "../redux/track";
 
 class Form extends Component {
 
@@ -47,4 +47,4 @@ class Form extends Component {
     }
 }
 
-export default connect(null, ({getLyrics}))(Form);
+export default connect(null, ({ getLyrics }))(Form);
