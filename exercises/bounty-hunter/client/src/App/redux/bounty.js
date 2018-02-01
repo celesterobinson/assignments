@@ -35,12 +35,13 @@ const bountyReducer = (prevState = { loading: true, data: [] }, action) => {
     }
 
 }
-const bountyUrl = `http://localhost:5040/bounty/`;
+const bountyUrl = `/bounty/`;
 export const postBounty = (inputs) => {
     return dispatch => {
         axios.post(bountyUrl, inputs)
             .then((response) => {
-                let { data } = response.data;
+                console.log(response)
+                let { data } = response;
                 dispatch({
                     type: "POST_BOUNTY",
                     data
@@ -64,11 +65,11 @@ export const getBounty = () => {
 
 export const updateBounty = (updatedBounty, id) => {
     return dispatch => {
-        axios.put(bountyUrl + id, updateBounty)
+        axios.put(bountyUrl + id, updatedBounty)
             .then((response) => {
                 dispatch({
                     type: "UPDATE_BOUNTY",
-                    updatedBounty,
+                    updatedBounty: response.data,
                     id
                 })
             })

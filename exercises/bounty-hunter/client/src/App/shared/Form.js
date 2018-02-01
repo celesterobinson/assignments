@@ -11,7 +11,7 @@ class Form extends Component {
                 firstName: firstName || "",
                 lastName: lastName || "",
                 bountyAmount: bountyAmount || "",
-                living: living || "",
+                living: living || true,
                 type: type || "Jedi"
             }
         }
