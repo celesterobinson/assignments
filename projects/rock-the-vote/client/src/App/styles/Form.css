@@ -67,3 +67,14 @@ form > input, form > button {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span > button {
+    position: relative;
+    bottom: 3px;
+}

@@ -33,10 +33,9 @@ class Issue extends Component {
             <div className="issue">
                 <div className="content">
                     <h1>{title}</h1>
-                    <button className="votes" onClick={() => updateIssue({ upvotes: 1 + upvotes }, _id)} name="upvote">&#8593;</button>
-                    <span> Upvotes: {upvotes}</span>
-                    <button className="votes" onClick={() => updateIssue({ downvotes: downvotes + 1 }, _id)} name="downvote">&#8595;</button>
-                    <span style={{ }}> Downvotes: {downvotes}</span>
+                    
+                    <span><button className="votes" onClick={() => updateIssue({ upvotes: 1 + upvotes }, _id)} name="upvote">&#8593;</button> Upvotes: {upvotes}</span>
+                    <span><button className="votes" onClick={() => updateIssue({ downvotes: downvotes + 1 }, _id)} name="downvote">&#8595;</button> Downvotes: {downvotes}</span>
                     
                 </div>
                 <div className="description">
