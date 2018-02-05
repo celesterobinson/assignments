@@ -1,0 +1,6 @@
+.issue-list {
+    width: 100%;
+    grid-area: l;
+    margin: 0 auto;
+    overflow: scroll;
+}

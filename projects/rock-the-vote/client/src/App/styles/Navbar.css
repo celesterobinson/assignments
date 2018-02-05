@@ -1,0 +1,23 @@
+.navbar {
+    grid-area: h;
+    text-align: left;
+    padding-left: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 67px;
+    line-height: 67px;
+}
+
+.navbar > h1 {
+    font-size: 50px;
+}
+@media(max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar > h1 {
+        text-align: center;
+    }
+}
+
+

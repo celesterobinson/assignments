@@ -1,0 +1,89 @@
+.issue {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+        "c b"
+        "d d";
+    height: auto;
+    border-radius: 10px;
+    white-space: pre-wrap;
+}
+
+.content > h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.content > span {
+    font-size: 24px;
+    width: 200px;
+}
+
+.content > span:nth-of-type(1) {
+    color: #2d72a5;
+    display: inline;
+}
+
+.content > span:nth-of-type(2) {
+    color: #dd5041;
+    display: inline;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: b;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 10px;
+    border-radius: 0 10px 0 0;
+}
+
+.delete-button, .edit-button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    height: 60px;
+
+}
+
+.delete-button {
+    background-color: #dd5041;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    grid-area: c;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 0 0 0;
+}
+
+.content > button {
+    width: 30px;
+}
+
+.description {
+    grid-area: d;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.votes {
+    display: inline;
+    background-color: white;
+}

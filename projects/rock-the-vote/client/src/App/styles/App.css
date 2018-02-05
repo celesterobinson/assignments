@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+    display: grid;
+    background-image: url("../images/flag.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "f h"
+        "f l"
+        "f l";
+    height: 100vh;
+    font-family: 'News Cycle', sans-serif;
+}
+
+@media(max-width: 1172px) {
+    .app-wrapper {
+        background-size: auto 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    .app-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr auto;
+        grid-template-areas:
+            "h"
+            "f"
+            "l"
+    }
+    .form-elements {
+        width: 90%;
+    }
+}
